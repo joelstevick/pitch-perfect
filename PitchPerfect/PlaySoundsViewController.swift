@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlaySoundsViewController: UIViewController {
 
     var recordedAudioURL: URL!
-    // MARK: Outlets
+    
+    var audioFile:AVAudioFile!
+    var audioEngine:AVAudioEngine!
+    var audioPlayerNode: AVAudioPlayerNode!
+    var stopTimer: Timer!
 
+    // MARK: Outlets
     @IBOutlet weak var snailButton: UIButton!
     @IBOutlet weak var chipmunkButton: UIButton!
     @IBOutlet weak var rabbitButton: UIButton!
@@ -21,7 +27,6 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var stopButton: UIButton!
     
     // MARK: Actions
-
     @IBAction func playSoundForButton(_ sender: UIButton) {
         print("Play Sound Button Pressed")
     }
@@ -29,13 +34,20 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func stopButtonPressed(_ sender: AnyObject) {
         print("Stop Audio Button Pressed")
     }
+   
+    enum ButtonType: Int {
+        case slow = 0, fast, chipmunk, vader, echo, reverb
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         stopButton.imageView?.contentMode = .scaleAspectFit
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        configureUI(.notPlaying)
+    }
     /*
     // MARK: - Navigation
 
