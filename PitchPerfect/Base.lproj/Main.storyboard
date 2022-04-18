@@ -71,12 +71,12 @@
         <scene sceneID="7Bl-lU-Zli">
             <objects>
                 <viewController id="suJ-9f-JkZ" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="dY5-rb-Qxh">
+                    <view key="view" contentMode="scaleToFill" id="dY5-rb-Qxh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0bA-FM-JGy">
-                                <rect key="frame" x="93" y="44" width="228" height="280"/>
+                                <rect key="frame" x="93" y="308" width="228" height="280"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sIT-8a-V7t">
                                         <rect key="frame" x="0.0" y="0.0" width="228" height="64"/>
@@ -141,18 +141,23 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJG-6K-I8B" userLabel="Stop button">
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYg-qY-DI2">
                                         <rect key="frame" x="82" y="216" width="64" height="64"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="64" id="WHo-W1-hKk"/>
-                                            <constraint firstAttribute="width" constant="64" id="n1M-hP-eQp"/>
-                                        </constraints>
-                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button" image="Stop"/>
-                                        <connections>
-                                            <action selector="stopButtonPressed:" destination="suJ-9f-JkZ" eventType="touchUpInside" id="N5A-SN-qEx"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJG-6K-I8B" userLabel="Stop button">
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="WHo-W1-hKk"/>
+                                                    <constraint firstAttribute="width" constant="64" id="n1M-hP-eQp"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="Stop"/>
+                                                <connections>
+                                                    <action selector="stopButtonPressed:" destination="suJ-9f-JkZ" eventType="touchUpInside" id="N5A-SN-qEx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -161,7 +166,6 @@
                         <constraints>
                             <constraint firstItem="0bA-FM-JGy" firstAttribute="centerX" secondItem="dY5-rb-Qxh" secondAttribute="centerX" id="KKJ-Pa-1tk"/>
                             <constraint firstItem="0bA-FM-JGy" firstAttribute="centerY" secondItem="dY5-rb-Qxh" secondAttribute="centerY" id="eds-3P-Op8"/>
-                            <constraint firstItem="0bA-FM-JGy" firstAttribute="topMargin" secondItem="L0E-cM-AyV" secondAttribute="top" id="l1H-Ky-UBH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cwV-Sv-EVW"/>
