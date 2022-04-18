@@ -11,10 +11,11 @@ class PlaySoundsViewController: UIViewController {
 
     var recordedAudioURL: URL!
     
+    @IBOutlet weak var stopButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        stopButton.imageView?.contentMode = .scaleAspectFit
     }
     
 
