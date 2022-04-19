@@ -79,13 +79,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="0bA-FM-JGy">
-                                <rect key="frame" x="93" y="308" width="228" height="280"/>
+                                <rect key="frame" x="93" y="126" width="228" height="644"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="sIT-8a-V7t">
-                                        <rect key="frame" x="0.0" y="0.0" width="228" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="155"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52J-ce-3Gp" userLabel="Slow button">
-                                                <rect key="frame" x="0.0" y="0.0" width="114" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="155"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Slow"/>
                                                 <connections>
@@ -93,7 +93,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOk-ey-dgu" userLabel="Fast button">
-                                                <rect key="frame" x="114" y="0.0" width="114" height="64"/>
+                                                <rect key="frame" x="114" y="0.0" width="114" height="155"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Fast"/>
                                                 <connections>
@@ -103,10 +103,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XO1-sR-HE7">
-                                        <rect key="frame" x="0.0" y="72" width="228" height="64"/>
+                                        <rect key="frame" x="0.0" y="163" width="228" height="155"/>
                                         <subviews>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHD-TU-ivA" userLabel="High pitch button">
-                                                <rect key="frame" x="0.0" y="0.0" width="114" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="155"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="HighPitch"/>
                                                 <connections>
@@ -114,7 +114,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcT-rF-ofi" userLabel="Low pitch button">
-                                                <rect key="frame" x="114" y="0.0" width="114" height="64"/>
+                                                <rect key="frame" x="114" y="0.0" width="114" height="155"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="LowPitch"/>
                                                 <connections>
@@ -124,10 +124,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yZZ-7r-N02">
-                                        <rect key="frame" x="0.0" y="144" width="228" height="64"/>
+                                        <rect key="frame" x="0.0" y="326" width="228" height="155"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGa-98-8F1" userLabel="Echo button">
-                                                <rect key="frame" x="0.0" y="0.0" width="114" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="114" height="155"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Echo"/>
                                                 <connections>
@@ -135,7 +135,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGU-MX-t0p" userLabel="Reverb button">
-                                                <rect key="frame" x="114" y="0.0" width="114" height="64"/>
+                                                <rect key="frame" x="114" y="0.0" width="114" height="155"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="Reverb"/>
                                                 <connections>
@@ -145,10 +145,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYg-qY-DI2">
-                                        <rect key="frame" x="82" y="216" width="64" height="64"/>
+                                        <rect key="frame" x="82" y="489" width="64" height="155"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJG-6K-I8B" userLabel="Stop button">
-                                                <rect key="frame" x="0.0" y="0.0" width="64" height="64"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="64" height="155"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="WHo-W1-hKk"/>
                                                     <constraint firstAttribute="width" constant="64" id="n1M-hP-eQp"/>
@@ -162,6 +162,9 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="380" id="fQe-OP-GpP"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="L0E-cM-AyV"/>
